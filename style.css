@@ -6,7 +6,7 @@ body{
     background: #101d3f;
     color: aliceblue;
     font-family: 'Josefin Sans', sans-serif;
-    height: 100%;
+    max-height: 100vh;
     overflow-x: hidden;
     margin: 0;
   }
@@ -53,7 +53,7 @@ a{
     margin: 10px;
 }
 .main__foto_img{
-    width: 80%;
+    width: 100%;
     padding: 3px;
     border: 5px solid #157494;
     border-radius: 50%;
@@ -70,7 +70,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 80%;
     text-align: center;
     line-height: 1.5;
     padding: 10px;
@@ -97,6 +97,7 @@ a{
     padding-top: 50px;
     padding-bottom: 80px;
     display: flex;
+    overflow-x: hidden;
 }
 .swiper-slide {
     background-position: center;
@@ -135,9 +136,9 @@ a{
 }
 .swiper__button{
     margin: 8vw;
-    padding: 20px;
+    padding: 25px;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.5vw;
+    font-size: 3vw;
     border: none;
     background-color: #157494;
     border-radius: 25px;
@@ -211,7 +212,7 @@ a{
     margin-bottom: 5px;
     color: white;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 2.5vw;
   }
   
   .form-container .form-group input {
@@ -242,11 +243,11 @@ a{
     justify-content: center;
     align-self: flex-start;
     color: white;
-    width: 90%;
+    width: 100%;
     background: #101d3f;
     border: 1px solid #414141;
     padding: 12px 16px;
-    font-size: inherit;
+    font-size: 2vw;
     gap: 8px;
     margin-top: 8px;
     cursor: pointer;
@@ -263,7 +264,6 @@ a{
     display: flex;
     justify-content: center;
   }
-
 
 .footer{
   margin-top: 40px;
@@ -288,21 +288,51 @@ h4, p{
       height: 20em;
     }
   }
-  @media all and (max-width: 750px){
+  @media all and (max-width: 770px){
+    .navbar__items{
+      height: 5vh;
+  }
+  .main__text_follow, .skills__header, .contacts__header{
+    font-size: 4vw;
+}
     .swiper-slide {
-      width: 20em;
-      height: 10em;
+      width: 30em;
+      height: 15em;
     }
     .swiper__button{
-      padding: 15px;
+      margin: 4vw;  
     }
+    .swiper__title, .swiper__used{
+      margin-top: 2vh;
+      font-size: 3vw;
+  }
   }
     @media all and (max-width: 450px){
+      .navbar__items{
+        height: 5vh;
+    }
+      .main__box{
+        flex-direction: column;
+        justify-content: center;
+       align-items: center;
+    }
+    .main__text_info{
+      font-size: 5.5vw;
+  }
       .swiper-slide {
-        width: 14em;
-        height: 7em;
+        width: 20em;
+        height: 10em;
       }
       .swiper__button{
-        padding: 10px;
+        padding: 15px;
+        font-size: 4vw;
+        margin: 3vw;
       }
+      .swiper__title, .swiper__used{
+        margin-top: 1vh;
+        font-size: 3vw;
+    }
+    .form-container .form-group label {
+      font-size: 4vw;
+    }
   }
