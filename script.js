@@ -8,7 +8,7 @@ gsap.from(text, {x: 200, duration: 1})
 gsap.from(followText, {opacity: 0, duration: 1, delay: 3})
 gsap.to(text, {duration: 2, text: `Hello! My name is Oksana and I'm a Frontend Developer, located in Germany.
 I finished a courses of JavaScript, React.js, Redux and Node.js at CanSheCode programming school
-and now I’m studying typescript and angular. 
+and now I’m studying TypeScript and Angular. 
 I speak 5 languages ​​- Ukrainian, Russian, English, German and of course JavaScript)
 Making web-sites and web-applications is my passion.
 My goal is to grow and develop in IT and to find a company that shares my ambition.`, ease: "none"});
